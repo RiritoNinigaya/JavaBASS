@@ -6,6 +6,7 @@ def Main():
     with zip.ZipFile(file="JavaBASS-Release.zip") as zip_file:
         zip_file.extractall(path="{}".format(os.curdir))
         print("Extracted!!!")
+    os.system("start run.bat")
     os._exit(403)
 
 if __name__ == "__main__":
