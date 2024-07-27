@@ -23,7 +23,7 @@ public class Main
 
     public static String UTF16ToUTF8(String new_string){
         String s = new_string;
-        String convertedInUTF8 = new String(s.getBytes(), StandardCharsets.US_ASCII);
+        String convertedInUTF8 = new String(s.getBytes(), StandardCharsets.UTF_8);
         return convertedInUTF8;
     }
     public static void Bass_Start()
@@ -35,7 +35,7 @@ public class Main
         else{
             System.out.printf("Bass Is Not Founded or BASS Is Not Initializated");
         }
-        String KanaBoonSpiral = UTF16ToUTF8("KanaBoonSpiral.mp3");
+        String KanaBoonSpiral = UTF16ToUTF8("TheMisfitOfDemonKing2PART2_BURNOUTSYNDROME.mp3");
         long bass_stream = INSTANCE.BASS_StreamCreateFile(0, KanaBoonSpiral, 0, 0, 0x4);
         INSTANCE.BASS_ChannelPlay(bass_stream, false);
     }
