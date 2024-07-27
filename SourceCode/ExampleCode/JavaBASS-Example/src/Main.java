@@ -35,8 +35,8 @@ public class Main
         else{
             System.out.printf("BASS Module is not Founded... Make Sure what bass.dll is in YOU'RE CURRENT FOLDER!!!");
         }
-        String KanaBoonSpiral = UTF16ToUTF8("TheMisfitOfDemonKing2PART2_BURNOUTSYNDROME.mp3");
-        long bass_stream = INSTANCE.BASS_StreamCreateFile(0, KanaBoonSpiral, 0, 0, 0x4);
+        String MusicExample = UTF16ToUTF8("TheMisfitOfDemonKing2PART2_BURNOUTSYNDROME.mp3");
+        long bass_stream = INSTANCE.BASS_StreamCreateFile(0, MusicExample, 0, 0, 0x4);
         INSTANCE.BASS_ChannelPlay(bass_stream, false);
     }
     public static void main(String[] args) throws InterruptedException {
