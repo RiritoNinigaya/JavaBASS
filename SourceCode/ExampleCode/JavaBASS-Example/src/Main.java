@@ -33,7 +33,7 @@ public class Main
             System.out.printf("BASS IS STARTED!!!");
         }
         else{
-            System.out.printf("Bass Is Not Founded or BASS Is Not Initializated");
+            System.out.printf("BASS Module is not Founded... Make Sure what bass.dll is in YOU'RE CURRENT FOLDER!!!");
         }
         String KanaBoonSpiral = UTF16ToUTF8("TheMisfitOfDemonKing2PART2_BURNOUTSYNDROME.mp3");
         long bass_stream = INSTANCE.BASS_StreamCreateFile(0, KanaBoonSpiral, 0, 0, 0x4);
